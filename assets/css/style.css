@@ -1119,6 +1119,58 @@ p + p { margin-top: 0.9em; }
   }
 }
 
+/* ── About Achievements ─────────────────────────────────────── */
+.about-achievements {
+  margin: var(--space-lg) 0;
+}
+
+.achievements-title {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  margin-bottom: var(--space-md);
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.achievements-list li {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  gap: 0.75rem;
+  padding: var(--space-sm) var(--space-md);
+  background: var(--clr-surface);
+  border: 1px solid var(--clr-border);
+  border-left: 3px solid var(--clr-accent);
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  color: var(--clr-text-muted);
+  line-height: 1.6;
+}
+
+.achievements-list li strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  color: var(--clr-text);
+  margin-bottom: 0.25rem;
+}
+
+.ach-icon {
+  color: var(--clr-accent);
+  font-size: 0.65rem;
+  padding-top: 0.35rem;
+}
+
 /* ── Projects Section ───────────────────────────────────────── */
 .projects-grid {
   display: grid;
